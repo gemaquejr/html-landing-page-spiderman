@@ -1,6 +1,6 @@
 @import url("reset.css");
 @import url("global.css");
-@import url('components/navigator.css');
+@import url("components/navigator.css");
 
 .s-wrapper {
   display: flex;
@@ -12,10 +12,14 @@
 .s-wrapper .s-left-column {
   width: 100px;
   height: 100%;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  pading-right: 50px;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .s-wrapper .s-main-content {
@@ -23,4 +27,24 @@
   width: 100%;
   background-color: gray;
   padding-left: 130px;
+}
+
+.s-wrapper .s-main-content__top {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.s-wrapper .s-main-content__bottom {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.s-wrapper .s-main-content .s-logo img {
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 30px;
 }
